@@ -2,7 +2,7 @@
   "name": "three-shader-reader",
   "displayName": "Three Shader reader",
   "description": "Groups three js's  material shaders chunks for easy reading",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -30,6 +30,7 @@
       ]
     }
   },
+  "icon": "media/icon.png",
   "activationEvents": [],
   "scripts": {
     "lint": "eslint .",
