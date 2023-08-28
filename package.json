@@ -9,6 +9,7 @@
   "categories": [
     "Other"
   ],
+  "publisher": "BhushanWagh",
   "main": "./extension.js",
   "contributes": {
     "viewsContainers": {
