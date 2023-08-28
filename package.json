@@ -9,14 +9,27 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "three-shader-reader.helloWorld",
-      "title": "Hello World"
-    }]
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "three-shader-reader",
+          "title": "Three Shader Reader",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "three-shader-reader": [
+        {
+          "id": "threeShaderView",
+          "name": "Three Shader View"
+        }
+      ]
+    }
   },
+  "activationEvents": [],
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
