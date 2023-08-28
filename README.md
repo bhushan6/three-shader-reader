@@ -1,65 +1,40 @@
 # three-shader-reader README
 
-This is the README for your extension "three-shader-reader". After writing up a brief description, we recommend including the following sections.
+The "three-shader-reader" is a Visual Studio Code extension designed to simplify shader development in Three.js projects. This extension automatically replaces #include <...> directives in your GLSL code with the actual content from the corresponding .glsl.js files.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **List Shader Files**: Easily browse shader files located in `node_modules/three/src/renderers/shaders/ShaderLib`.
+- **View Shader Content**: Click on a shader file to view its content in the main editor pane.
 
-For example if there is an image subfolder under your extension project workspace:
+- **Resolve Includes**: Automatically replaces `#include <...>` directives with the content of the corresponding `.glsl.js` files.
 
-\!\[feature X\]\(images/feature-x.png\)
+- **Code Folding**: Use code folding regions to expand or collapse the included content.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
 
-## Requirements
+1. Open a Three.js project in Visual Studio Code.
+2. Navigate to the "GLSL Include Resolver" panel on the left sidebar.
+3. Click on a shader file to view its content, with `#include <...>` directives automatically resolved.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Installation
 
-## Extension Settings
+1. Open Visual Studio Code
+2. Go to Extensions (`Ctrl+Shift+X`)
+3. Search for "three-shader-reader"
+4. Click "Install"
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Usage
 
-For example:
+1. Open a Three.js project in Visual Studio Code.
+2. Navigate to the "GLSL Include Resolver" panel on the left sidebar.
+3. Click on a shader file to view its content, with `#include <...>` directives automatically resolved.
 
-This extension contributes the following settings:
+## How to Contribute
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+If you encounter any issues or have feature requests, please open an issue on the GitHub repository.
 
-## Known Issues
+## License
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This extension is released under the MIT License.
+Feel free to copy and paste this into your README.md file, and modify it as needed to better suit your extension.
